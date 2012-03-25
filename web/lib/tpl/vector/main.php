@@ -632,9 +632,8 @@ if (file_exists(DOKU_TPLINC."lang/".$conf["lang"]."/style.css")){
 <!-- end div id=content -->
 
 
-<!-- start div id=head -->
-<div id="head" class="noprint">
-  <?php
+<div id="wkadminbar" class="" role="navigation">
+ <?php
   //show personal tools
   if (!empty($conf["useacl"])){ //...makes only sense if there are users
       echo  "\n"
@@ -669,6 +668,11 @@ if (file_exists(DOKU_TPLINC."lang/".$conf["lang"]."/style.css")){
            ."  </div>\n";
   }
   ?>
+</div>
+
+<!-- start div id=head -->
+<div id="head" class="noprint">
+ 
 
   <!-- start div id=left-navigation -->
   <div id="left-navigation">
